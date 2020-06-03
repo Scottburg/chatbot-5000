@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--This is a html file for the codeworks entry coding assignment -->
+<html>
+
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<header>
+  <title>Chat bot 5000</title>
+  <header>
+
+    <body>
+      <div id=title>
+        <h1><strong>Chat bot 5000</strong></h1>
+        <h4>Why talk to yourself when you can talk to a real person?*</h4>
+      </div>
+      <div class="chatArea">
+        <div class="chatMsgs">
+          <div id="messages">
+          </div>
+        </div>
+
+        <textarea id="textbox" rows=3 placeholder="type here"></textarea>
+        <div id=buttondiv>
+          <button id="button">Send</button>
+          <script src="script.js"></script>
+        </div>
+      </div>
+
+      <footer>
+        <p> *real person refers to lines of randomly selected responses. </p>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script>
+        $("#textbox").keyup(function (event) {
+          if (event.keyCode === 13) {
+            $("button").click();
+          }
+        });
+
+      </script>
+    </body>
+    <html>
